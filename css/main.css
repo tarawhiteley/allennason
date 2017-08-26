@@ -1,0 +1,154 @@
+/*
+  pad the body and set default font styles
+*/
+body {
+ font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*  navigation bar*/
+.nav {
+  list-style: none;
+}
+
+/*  top menu list items - stack top links side by side
+*/
+.nav li {
+  float: left; /*1*/
+  background: #000000;
+}
+
+/*  top level rounded corners
+  1. first top level li edges round
+  2. first top level link edges round (this keeps the border radius on hover)
+*/
+.nav > li:first-of-type, /* 1 */
+.nav > li:first-of-type a { /* 2 */
+  border-radius: 5px 0 0 5px;
+}
+
+/*
+  1. last top level li edges round
+  2. last top level link edges round (this keeps the border radius on hover)
+*/
+.nav > li:last-of-type, /* 1 */
+.nav > li:last-of-type a { /* 2 */
+  border-radius: 0 5px 5px 0;
+}
+
+/*
+  1. make links block item
+  2. remove link underline
+  3. makes the transition smoother when hovering off a link
+  4. add text shadow
+*/
+.nav li a {
+  display: block; /*1*/
+  padding: 12px 14px;
+  text-decoration: none; /*2*/
+  color: #fff;
+  transition: all ease .5s; /*3*/
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, .1); /* 4*/
+  text-transform: uppercase;
+}
+
+/*    on hovering over ul make links fade out */
+.nav:hover li a {
+  opacity: .5;
+  transition: all ease .5s;
+}
+
+/* override previous rule for when hovering over individual link
+*/
+.nav li:hover a {
+  opacity: 1;
+}
+
+/*  responsive nav */
+
+/* hide select menu */
+nav select {
+	display: none;
+}
+
+/* hide - prefix on submenu */
+.nav span {
+	display: none;
+}
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+
+		/* hide nav */
+		.nav {
+			display: none !important;
+		}
+    /* show menu */
+		nav select {
+			display: inline-block;
+		}
+    /* show - prefix on sub items */
+		.nav span {
+			display: inline;
+		}
+
+	}
+
+header {
+  clear: both;
+}
+
+header h1 {
+  font-size: 3.4em;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 2em;
+  padding-top: 40%;
+}
+
+header h1, header p {
+  padding-left: 48px;
+}
+
+header img {
+  bottom: 0;
+  right: 0;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.floatright img {
+  width: 40%;
+}
+
+#calloutbtn {
+  background-color: #000000;
+  border-radius: 5px;
+  margin-left: 48px;
+  width: 300px;
+  text-align: center;
+}
+
+#calloutbtn p {
+  color: #ffffff;
+  font-size: 2em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, .1); /* 4*/
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+}
+
+#calloutbtn a {
+  text-decoration: none; 
+}
