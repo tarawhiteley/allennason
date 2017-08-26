@@ -3,6 +3,7 @@
 */
 body {
  font-family: 'Source Sans Pro', sans-serif;
+ width: 100%;
 }
 
 /*  navigation bar*/
@@ -95,6 +96,8 @@ nav select {
 
 header {
   clear: both;
+  width: 100%;
+  height: 100%;
 }
 
 header h1 {
@@ -102,9 +105,20 @@ header h1 {
   text-transform: uppercase;
 }
 
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.3em;
+  padding-top: 50%;
+}
+
 header p {
   font-size: 2em;
-  padding-top: 40%;
+  padding-top: 50%;
 }
 
 header h1, header p {
@@ -112,8 +126,11 @@ header h1, header p {
 }
 
 header img {
+  text-align: right;
+  width: 100%;
   bottom: 0;
   right: 0;
+  position: fixed;
 }
 
 .floatleft {
@@ -122,14 +139,11 @@ header img {
 
 .floatright {
   float: right;
+  width: 50%;
 }
 
 .clear {
   clear: both;
-}
-
-.floatright img {
-  width: 40%;
 }
 
 #calloutbtn {
@@ -150,5 +164,37 @@ header img {
 }
 
 #calloutbtn a {
-  text-decoration: none; 
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#calloutbtn a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#calloutbtn a:hover {
+  opacity: .5;
+  transition: all ease .5s;
+}
+
+#about, section {
+  width: 90%;
+  padding: 100px 48px 0 48px;
+}
+
+section p {
+  padding-top: 10px;
+}
+
+#about img {
+  width: 40%;
+  text-align: left;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  margin-left: 48px;
+  font-size: 0.8em;
 }
