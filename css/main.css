@@ -118,6 +118,10 @@ h2, .formheader {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 1.6em;
+}
+
 .formheader {
   padding: 0 4px;
 }
@@ -211,13 +215,6 @@ section p {
   text-align: left;
 }
 
-footer {
-  bottom: 0;
-  position: fixed;
-  margin-left: 48px;
-  font-size: 0.8em;
-}
-
 #contactform {
   background-color: #000000;
   color: #ffffff;
@@ -258,3 +255,45 @@ label, input[type=text] {
 }
 
 #success_message{ display: none;}
+
+.card {
+  width: 50%;
+  margin: 40px 100px 50px 100px;
+  border-radius: 5px;
+  border: 4px solid black;
+  background-color: #ccc;
+  height: 100%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.cardheader {
+  margin-bottom: 40px;
+}
+
+.card img {
+  width: 50%;
+  float: right;
+  border: 2px solid black;
+  margin: 0 20px 20px 20px;
+}
+
+.pullquote {
+  font-weight: bold;
+}
+
+.cv {
+  width: calc(96% / 3);
+  margin: 3px;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  margin-left: 48px;
+  font-size: 0.8em;
+}
+
+.paddingtop {
+  padding: 100px 48px
+}

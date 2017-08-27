@@ -26,6 +26,7 @@ $(document).ready(function() {
 
 });
 
+//Animsition
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
@@ -49,7 +50,7 @@ $(document).ready(function() {
     transition: function(url){ window.location.href = url; }
   });
 
-
+//Form
 	$('#contact_form').bootstrapValidator({
 	        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
 	        feedbackIcons: {
@@ -169,4 +170,7 @@ $(document).ready(function() {
 	                console.log(result);
 	            }, 'json');
 	        });
-	
+
+				$(document).ready(function() {
+				$(".fancybox").fancybox();
+				});
