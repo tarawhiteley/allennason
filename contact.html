@@ -8,7 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 <link rel="stylesheet" href="css/animsition.css">
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
   <div class="animsition" data-animsition-in-class="fade-in"
@@ -17,38 +23,138 @@
 
 <nav role="navigation">
   <ul class="nav">
-    <li><a href="index.html" class="animsition-link" data-animsition-in-class="fade-in"
+    <li><a href="index.html" class="animsition-link bigfont" data-animsition-in-class="fade-in"
   data-animsition-in-duration="1000">Home</a></li>
 
-    <li><a href="about.html" class="animsition-link" data-animsition-in-class="fade-in"
+    <li><a href="about.html" class="animsition-link bigfont" data-animsition-in-class="fade-in"
   data-animsition-in-duration="1000">About</a></li>
 
-    <li><a href="specialties.html" class="animsition-link" data-animsition-in-class="fade-in"
+    <li><a href="specialties.html" class="animsition-link bigfont" data-animsition-in-class="fade-in"
   data-animsition-in-duration="1000">Specialties</a></li>
 
-    <li><a href="cv.html" class="animsition-link" data-animsition-in-class="fade-in"
+    <li><a href="cv.html" class="animsition-link bigfont" data-animsition-in-class="fade-in"
   data-animsition-in-duration="1000">Curriculum Vitae</a></li>
 
-    <li><a href="news.html" class="animsition-link" data-animsition-in-class="fade-in"
+    <li><a href="news.html" class="animsition-link bigfont" data-animsition-in-class="fade-in"
   data-animsition-in-duration="1000">In The News</a></li>
 
-    <li><a href="otherservices.html" class="animsition-link" data-animsition-in-class="fade-in"
+    <li><a href="otherservices.html" class="animsition-link bigfont" data-animsition-in-class="fade-in"
   data-animsition-in-duration="1000">Other Services</a></li>
 
-    <li><a href="contact.html" class="animsition-link" data-animsition-in-class="fade-in"
+    <li><a href="contact.html" class="animsition-link bigfont" data-animsition-in-class="fade-in"
   data-animsition-in-duration="1000">Contact</a></li>
   </ul>
 </nav>
 
 <section id="contact" class="clear">
 
-  <article class="floatright">
+  <article class="floatleft">
     <h2>Contact me.</h2>
-    <div id="calloutbtn" class="animsition-link" data-animsition-in-class="fade-in"
-  data-animsition-in-duration="1000"><a href="about.html"><p>LinkedIn</p></a></div>
+    <div class="calloutbtn nomargin" class="animsition-link" data-animsition-in-class="fade-in"
+  data-animsition-in-duration="1000"><a href="https://www.linkedin.com/in/allennason/"><p>LinkedIn</p></a></div>
   </div>
   </article>
 </section>
+
+
+<div class="container floatright">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend class="formheader">Leave me a message.</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name.</label>
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name.</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail.</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone.</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text area -->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Comments.</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Comments"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, I will get back to you shortly.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+<legend class="disclaimer">The submission of this form does not create an attorney-client relationship, and receipt of it does not constitute an attorney-client relationship. Anything you send to The Law Firm of Allen M. Nason, Esq., will not be confidential or privileged unless I have agreed to represent you. If you submit this form, you confirm that you have read and understand this notice.</legend>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 <footer class="clear">
     <p>Page last updated September 2017.</p>
@@ -56,6 +162,8 @@
 
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/animsition.js"></script>
   <script src="js/main.js"></script>
 </div>

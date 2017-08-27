@@ -1,3 +1,8 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
 /*
   pad the body and set default font styles
 */
@@ -7,8 +12,9 @@ body {
 }
 
 /*  navigation bar*/
-.nav {
+.nav, nav {
   list-style: none;
+  margin: 20px 0 0 20px;
 }
 
 /*  top menu list items - stack top links side by side
@@ -50,6 +56,7 @@ body {
   transition: all ease .5s; /*3*/
   text-shadow: 1px 1px 0px rgba(0, 0, 0, .1); /* 4*/
   text-transform: uppercase;
+  font-size: 1.2em;
 }
 
 /*    on hovering over ul make links fade out */
@@ -106,9 +113,13 @@ header h1 {
 }
 
 
-h2 {
+h2, .formheader {
   font-size: 2em;
   text-transform: uppercase;
+}
+
+.formheader {
+  padding: 0 4px;
 }
 
 p {
@@ -146,7 +157,7 @@ header img {
   clear: both;
 }
 
-#calloutbtn {
+.calloutbtn {
   background-color: #000000;
   border-radius: 5px;
   margin-left: 48px;
@@ -154,7 +165,7 @@ header img {
   text-align: center;
 }
 
-#calloutbtn p {
+.calloutbtn p {
   color: #ffffff;
   font-size: 2em;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, .1); /* 4*/
@@ -163,19 +174,27 @@ header img {
   text-align: center;
 }
 
-#calloutbtn a {
+.calloutbtn a {
   text-decoration: none;
   color: #ffffff;
 }
 
-#calloutbtn a:visited {
+.calloutbtn a:visited {
   text-decoration: none;
   color: #ffffff;
 }
 
-#calloutbtn a:hover {
+.calloutbtn a:hover {
   opacity: .5;
   transition: all ease .5s;
+}
+
+.nomargin {
+  margin: 50px 0;
+}
+
+li a.bigfont {
+  font-size: 1.4em;
 }
 
 #about, section {
@@ -198,3 +217,44 @@ footer {
   margin-left: 48px;
   font-size: 0.8em;
 }
+
+#contactform {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 48px;
+}
+
+.well {
+  background-color: #000000;
+  margin-right: 100px;
+}
+
+legend, .col-md-4, .control-label {
+  color: #ffffff;
+}
+
+.btn-warning {
+  background-color: inherit;
+  border-color: inherit;
+}
+
+.btn-warning:hover {
+  background-color: #555;
+  border-color: #ccc;
+}
+legend.disclaimer {
+  font-size: 1em;
+  padding: 8px 0;
+}
+
+submit {
+  padding: 8px 0;
+}
+
+label, input[type=text] {
+  display: inline;
+}
+
+#success_message{ display: none;}
