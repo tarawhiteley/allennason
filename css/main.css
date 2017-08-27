@@ -84,7 +84,7 @@ nav select {
 }
 
 /* media queries */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 950px) {
 
 		/* hide nav */
 		.nav {
@@ -112,7 +112,6 @@ header h1 {
   text-transform: uppercase;
 }
 
-
 h2, .formheader {
   font-size: 2em;
   text-transform: uppercase;
@@ -128,7 +127,6 @@ h3 {
 
 p {
   font-size: 1.3em;
-  padding-top: 50%;
 }
 
 header p {
@@ -142,9 +140,9 @@ header h1, header p {
 
 header img {
   text-align: right;
-  width: 100%;
+  width: 50%;
   bottom: 0;
-  right: 0;
+  right: 40px;
   position: fixed;
 }
 
@@ -159,6 +157,15 @@ header img {
 
 .clear {
   clear: both;
+}
+
+.calloutabt {
+  max-width: 300px;
+  left: 0;
+  top: 60%;
+  position: fixed;
+  clear: both;
+  margin-left: 48px;
 }
 
 .calloutbtn {
@@ -250,6 +257,10 @@ submit {
   padding: 8px 0;
 }
 
+.input-group {
+  width: 200%;
+}
+
 label, input[type=text] {
   display: inline;
 }
@@ -258,7 +269,7 @@ label, input[type=text] {
 
 .card {
   width: 50%;
-  margin: 40px auto;
+  margin: 40px 0 40px 48px;
   border-radius: 5px;
   border: 4px solid black;
   height: 100%;
@@ -286,19 +297,12 @@ label, input[type=text] {
   margin: 3px;
 }
 
-footer {
-  bottom: 0;
-  position: fixed;
-  margin-left: 48px;
-  font-size: 0.8em;
-}
-
 .paddingtop {
   padding: 100px 48px
 }
 
 .containerspecial {
-  width: 90%;
+  width: 100%;
   margin: 40px auto;
   display: flex;
   flex-direction: row;    /* Items inside the container will be positioned horizontally */
@@ -318,4 +322,107 @@ footer {
 
 .cardspecial h2 {
   text-align: center;
+}
+
+footer {
+  bottom: 120px;
+  right: -100px;
+  position: fixed;
+  font-size: 0.8em;
+  transform: rotate(-90deg);
+}
+
+.extrabottompadding {
+  right: -90px;
+}
+
+
+@media only screen and (max-width: 940px) {
+  header p {
+    padding-top: 10%;
+  }
+
+  .calloutabt {
+    top: 40%;
+  }
+
+  footer {
+    bottom: 0;
+    text-align: right;
+    position: fixed;
+    margin: 20px 100px 0 0;
+    font-size: 0.8em;
+    transform: rotate(0deg);
+  }
+
+  footer.alignleft {
+    text-align: left;
+    left: 0;
+    margin-left: 20px;
+  }
+
+  #about img {
+    width: 70%;
+    max-width: 500px;
+  }
+
+  .floatleft, .floatright {
+    float: none;
+    width: 90%;
+  }
+
+  section#about {
+    width: 90%;
+    padding: 20px 48px;
+    margin: auto;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card img {
+    width: 70%;
+    float: none;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .containerspecial {
+    display: inline-block;
+  }
+
+  .cardspecial {
+    width: 40%;
+    max-width: 300px;
+    margin: 40px auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .well, .calloutbtn {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+   .input-group {
+     width: 180%;
+   }
+}
+
+@media only screen and (max-width: 991px) {
+   .input-group {
+     width: 100%;
+   }
+}
+
+@media only screen and (max-width: 610px) {
+   .card {
+     width: 70%;
+     margin: auto;
+     margin-top: 30px;
+   }
 }
