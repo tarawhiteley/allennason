@@ -258,10 +258,9 @@ label, input[type=text] {
 
 .card {
   width: 50%;
-  margin: 40px 100px 50px 100px;
+  margin: 40px auto;
   border-radius: 5px;
   border: 4px solid black;
-  background-color: #ccc;
   height: 100%;
   padding: 30px;
   overflow: hidden;
